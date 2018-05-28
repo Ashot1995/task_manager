@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS `task_manager`;
+		        		USE `task_manager`;
+		                CREATE TABLE IF NOT EXISTS `task_list` (
+							  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+							  `title` VARCHAR(255) NOT NULL,
+							  `desc` VARCHAR(255) NOT NULL,
+							  `start_date` VARCHAR(255) NOT NULL,
+							  `id_in_tasks` VARCHAR(255) NOT NULL,
+							  `direction` VARCHAR(255) NOT NULL,
+							  PRIMARY KEY (`id`)
+						) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+
